@@ -1,6 +1,1 @@
-n = input()
-member = input().split()
-
-nums = sorted(member)
-
-
+print(f"{int(input())-543}")
