@@ -31,7 +31,7 @@ max_size = 0  # max
 
 for i in range(n):
     for j in range(m):
-        if (graph[i][j] == 1):  # not visited
+        if (graph[i][j] == 1):  # IF not visited
             max_size = max(max_size, bfs(i, j))
             cnt += 1
 

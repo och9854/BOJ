@@ -12,7 +12,7 @@ def BFS1(graph, start, visited):
 
     # while loop
     while queue:  # 큐가 빌 때까찌
-        v = queue.popleft()  # 큐를 하나 뻄
+        v = queue.popleft()  # 큐에서 하나 뻄
         print(v)
 
         # update for next BFS
@@ -60,8 +60,8 @@ def BFS2(x, y):
             nx = x + dx[i]
             ny = y + dy[i]
 
-            if (0 <= nx < n and 0 <= ny < m):  # in box range
-                if graph[nx][ny] == False:
+            if (0 <= nx < n and 0 <= ny < m):  # IF in box range
+                if graph[nx][ny] == False:  # IF not visited
                     queue.append((nx, ny))
                     graph[nx][ny] = True
 
